@@ -1,0 +1,191 @@
+@media screen and (max-width: 1230px) {
+    .jumbotronNaslov{
+      font-size: 2.5rem;
+    }
+    .carousel-caption{
+      padding:22px;
+    }
+}
+
+@media screen and (max-width:991px) {
+      #over{
+          width: 50%;
+      }
+      .carousel-caption{
+        padding:20px;
+      }
+      .navbar-light .navbar-brand{
+          position: absolute;
+          left: 45%;
+        }
+        .navbar-collapse {
+          margin-top: 68px !important;
+          z-index: 999!important;
+      }
+      .vacation{
+          flex-basis: 45% !important;
+      }
+      .news, .offer{
+          flex-basis: 30% !important;
+      }
+      #plans .plan{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+      #plans .plan .img{
+        width: 100%;
+        display: inline-block;
+        text-align: center;
+
+      }
+      #plans .plan .text{
+        width: 100%;
+      }
+      .odvoji{
+        flex-basis: 30% !important;
+    }
+    ul.list-unstyled{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    ul.pagination{
+      display: none!important;
+    }
+    #overJumbotronNews{
+      left: 10%;
+      display: flex;
+      align-items: center;
+      width: 80%;
+    }
+    .jumbotronNaslov{
+      font-size: 2.4rem;
+    }
+    .card-title.titleCardNews{
+      font-size: 1rem !important;
+      height: 50px;
+    }
+    .carousel{
+      margin-top: 68px;
+    }
+}
+
+@media screen and (max-width:930px) {
+  .vacation .caption > p{
+    font-size: 50%;
+  }
+}
+
+@media screen and (max-width:840px) {
+    .naslov {
+        font-size: 25px!important;
+    }
+    .odvoji{
+      flex-basis: 50% !important;
+  }
+  .button{
+    width:25%;
+    padding:10px;
+  }
+}
+
+@media screen and (max-width:768px) {
+    .kolona {
+        padding-bottom: 25px
+    }
+    .logo{
+        width:50%;
+    }
+    .news, .offer{
+      flex-basis: 45% !important;
+    }
+    .odvoji{
+      flex-basis: 100%!important;
+    }
+    #overJumbotronNews{
+      left: 10%;
+      width:70%;
+    }
+    .card-title.titleCardNews{
+      height: 30px;
+    }
+    .naslov{
+      font-size: 22px!important;
+      
+    }
+    .first{
+      margin-bottom:40%!important;
+      line-height: 1;
+    }
+    span.spanImgSlajder{
+      display: none;
+    }
+}
+
+@media screen and (max-width:600px) {
+  .naslovLinije::before, 
+  .naslovLinije::after {
+    display: none;
+  }
+}
+
+@media screen and (max-width:520px) {
+  .vacation, .news, .offer{
+    flex-basis: 99% !important;
+  }
+    .carousel-caption.dest h2 {
+      font-size: 2.7em;
+  }
+  .carousel-caption.dest p {
+      font-size: 1.5rem;
+  }
+  .card-title.titleCardNews{
+    height: 15px;
+  }
+  .first{
+    margin-bottom:50%!important;
+
+  }
+}
+
+@media screen and (max-width:435px) {
+    .naslov {
+        font-size: 20px!important
+    }
+    .card-title.titleCardNews{
+      height: 30px;
+    }
+    #plans .plan .text p{
+      font-size:1.1rem;
+    }
+    #plans .plan .text > h2{
+      font-size:120%;
+    }
+    .first{
+      margin-bottom:52%!important;
+      letter-spacing:-.02em;
+      line-height:.5;
+    }
+}
+
+@media screen and (max-width:350px) {
+    .carousel-caption p {
+        display: none
+    }
+    .carousel{
+      margin-top: 100px;
+    }
+}
+
+@media screen and (max-width:320px) {
+  .jumbotronNaslov{
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width:300px) {
+    .carousel {
+        display: none!important
+    }
+}

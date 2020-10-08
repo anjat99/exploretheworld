@@ -1,0 +1,324 @@
+/* #region QUOTES */
+.animated-border-quote {
+    display: inline-block;
+    margin: 1em;
+    max-width: 100%;
+    overflow: hidden;
+  }
+  .sredina{
+      margin:0 auto;
+  }
+  .animated-border-quote blockquote {
+    background-color: #fff;
+    border: solid 2px #757575;
+    display: inline-block;
+    margin: 0;
+    padding: 1em;
+    position: relative;
+  }
+  .animated-border-quote blockquote:before {
+    animation: clockwise 30s infinite linear;
+    background-color: #fff;
+    bottom: 10%;
+    content: "";
+    left: 0;
+    opacity: .5;
+    position: absolute;
+    right: 0;
+    top: 10%;
+  }
+  .animated-border-quote blockquote:after {
+    animation: counter 30s infinite linear;
+    background-color: #fff;
+    bottom: 10%;
+    content: "";
+    left: 0;
+    opacity: .5;
+    position: absolute;
+    right: 0;
+    top: 10%;
+  }
+  .animated-border-quote blockquote cite {
+    display: block;
+    font-style: italic;
+    text-align: right;
+  }
+  .animated-border-quote blockquote cite:before {
+    content: "- ";
+  }
+  .animated-border-quote blockquote > * {
+    position: relative;
+    z-index: 1;
+  }
+  
+  @keyframes clockwise {
+    0% {
+      transform: rotate(0);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes counter {
+    0% {
+      transform: rotate(0);
+    }
+    100% {
+      transform: rotate(-360deg);
+    }
+  }
+/*#endregion */
+
+ /*
+.modal {
+	/* position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1050;
+	display: none;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	outline: 0; */
+	/* background-color: rgba(0, 0, 0, 0.3); 
+}*/
+/* .modal-dialog {
+	position: relative;
+	margin: 0.5rem;
+	pointer-events: none;
+} */
+/*
+.modal.fade .modal-dialog {
+	transition: -webkit-transform 0.3s ease-out;
+	transition: transform 0.3s ease-out;
+	transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
+	-webkit-transform: translate(0, -50px);
+	transform: translate(0, -50px);
+}
+@media (prefers-reduced-motion: reduce) {
+	.modal.fade .modal-dialog {
+	  transition: none;
+	}
+}
+.modal.show .modal-dialog {
+	-webkit-transform: none;
+	transform: none;
+}
+.modal.modal-static .modal-dialog {
+	-webkit-transform: scale(1.02);
+	transform: scale(1.02);
+}*/
+.modal-dialog-centered {
+	/* min-height: calc(100% - 1rem); */
+}
+.modal-dialog-centered::before {
+	height: calc(100vh - 1rem);
+}
+/*
+.modal-backdrop {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1040;
+	width: 100vw;
+	height: 100vh;
+	background-color: #000;
+}
+.modal-backdrop.fade {
+	opacity: 0;
+}
+.modal-backdrop.show {
+	opacity: 0.5;
+}*/
+/* .media-body{
+    padding: 5px!important;
+} */
+
+/* .odvoji{
+
+    width:20%!important;
+}
+.odvoji:first-child{
+    width: 30%!important;
+}
+.odvoji:last-child{
+    width:30%!important;
+} */
+
+
+@media screen and (min-width:1200px) {
+    /* .modal {
+        max-width: 1140px;
+      } */
+  }
+  
+  
+  @media screen and (max-width: 1230px) {
+  
+    .jumbotronNaslov{
+      font-size: 2.5rem;
+    }
+  }
+  
+  
+  @media screen and (max-width:991px) {
+      #over{
+          width: 50%;
+      }
+      .navbar-light .navbar-brand{
+          position: absolute;
+          left: 45%;
+        }
+        .navbar-collapse {
+          margin-top: 68px !important;
+          z-index: 999!important;
+      }
+      .vacation{
+          flex-basis: 45% !important;
+      }
+      .news, .offer{
+          flex-basis: 30% !important;
+      }
+      #plans .plan{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+      #plans .plan .img{
+        width: 100%;
+        display: inline-block;
+        text-align: center;
+  
+      }
+      #plans .plan .text{
+        width: 100%;
+      }
+      .odvoji{
+        flex-basis: 30% !important;
+    }
+    ul.list-unstyled{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    ul.pagination{
+      display: none!important;
+    }
+    #overJumbotronNews{
+      left: 10%;
+      display: flex;
+      align-items: center;
+      width: 80%;
+    }
+    .jumbotronNaslov{
+      font-size: 2.4rem;
+    }
+    .card-title.titleCardNews{
+      font-size: 1rem !important;
+      height: 50px;
+    }
+    .carousel{
+      margin-top: 68px;
+    }
+  }
+  
+  
+  @media screen and (max-width:840px) {
+      .naslov {
+          font-size: 25px!important
+      }
+      .odvoji{
+        flex-basis: 50% !important;
+    }
+  
+  }
+  
+  @media screen and (max-width:768px) {
+      .kolona {
+          padding-bottom: 25px
+      }
+      .logo{
+          width:50%;
+      }
+      .news, .offer{
+        flex-basis: 45% !important;
+    }
+    /* .modal-dialog {
+        max-width: 60%;
+        margin: 1.75rem auto;
+      }
+      .modal-dialog-scrollable {
+        max-height: calc(100% - 3.5rem);
+      }
+      .modal-dialog-scrollable .modal-content {
+        max-height: calc(100vh - 3.5rem);
+      }
+      .modal-dialog-centered {
+        min-height: calc(100% - 3.5rem);
+      }
+      .modal-dialog-centered::before {
+        height: calc(100vh - 3.5rem);
+      }
+      .modal-sm {
+        max-width: 300px;
+    } */
+    .odvoji{
+      flex-basis: 100%!important;
+    }
+    #overJumbotronNews{
+      left: 10%;
+    }
+    .card-title.titleCardNews{
+      height: 30px;
+    }
+     
+  }
+  
+  @media screen and (max-width:520px) {
+    .vacation, .news, .offer{
+      flex-basis: 99% !important;
+    }
+    
+   
+      .carousel-caption.dest h2 {
+        font-size: 2.7em;
+    }
+    .carousel-caption.dest p {
+        font-size: 1.5rem;
+    }
+    .card-title.titleCardNews{
+      height: 15px;
+    }
+  }
+  
+  
+  @media screen and (max-width:435px) {
+      .naslov {
+          font-size: 20px!important
+      }
+      .card-title.titleCardNews{
+        height: 30px;
+      }
+   
+  }
+  
+  @media screen and (max-width:350px) {
+      .carousel-caption p {
+          display: none
+      }
+      .carousel{
+        margin-top: 100px;
+      }
+  }
+  @media screen and (max-width:320px) {
+    .jumbotronNaslov{
+      font-size: 2rem;
+    }
+  }
+  
+  @media screen and (max-width:300px) {
+      .carousel {
+          display: none!important
+      }
+  }
+  
